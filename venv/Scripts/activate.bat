@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\user\DBP10\DBP-Mixxye\DBP-Mixxye\DBP-Mixxye\venv
+set VIRTUAL_ENV=C:\Users\Acer\Documents\Utec\2021 - 2\DBP\DBPCode\Proyecto1\DBP-Mixxye\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
