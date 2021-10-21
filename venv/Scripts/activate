@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\CarlosFlores\Desktop\UTEC\Ciclo3\DBP\DBP-Mixxye\venv"
+VIRTUAL_ENV="C:\Users\user\DBP10\DBP-Mixxye\DBP-Mixxye\DBP-Mixxye\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
