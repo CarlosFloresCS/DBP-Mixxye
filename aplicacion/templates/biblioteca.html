@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Mixxye</title>
+
+        <link rel="icon" href="https://codigoesports.com/wp-content/uploads/2018/01/G2-LOGO-2020-e1591144113864.png">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='biblioteca.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='normalize.css')}}">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+    <!--separador-->
+    <body>
+        <header>
+			<div class="contenedor">
+				<h2 class="logotipo">
+                    <img class="logo" src="https://www.pngkit.com/png/full/32-325006_g2-esports-g2-esports-csgo-logo.png" alt="g2_image"> MIXXYE
+                </h2>
+				<nav>
+					<a href="/{{perfil}}/{{id}}/biblioteca">{{perfil}}</a>
+                    <a href="/">Cerrar sesión</a>
+					<a href="https://github.com/CarlosFloresCS/DBP-Mixxye" target="_blank">Github</a>
+				</nav>
+			</div>
+		</header>
+        <div class="biblioteca">
+            <div class="contenedor">
+                <form action="/{{perfil}}/{{id}}/add" method="post">
+                    <input type="text" name="nombre" placeholder="nombre">
+                    <input type="text" name="url" placeholder="url">
+                    <button type="submit">save</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="table-music">
+            <table>
+                <thead>
+                    <tr class="table-music-titles">
+                        <th></th>
+                        <th>Tu Biblioteca</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for musica in biblioteca %}
+                        <tr class="table-music-body">
+                            <td>{{musica.nameM}}</td>
+                            <td><a class="link-b" href={{musica.url}} target="_blank">IR</a></td>
+                            <td><a class="delete-b" href="/{{perfil}}/{{id}}/delete/{{musica.id}}">DELETE</a></div>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

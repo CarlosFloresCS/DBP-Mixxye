@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #141414;
+    color: #ffffff;
+	font-size: 16px;
+    font-family: cursive;
+}
+
+a {
+	font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}
+
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: cursive;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover {
+	color: #FFF;
+}
+
+.logo {
+	width: 30px;
+}
+
+.formulario {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(https://media-exp1.licdn.com/dms/image/C4D1BAQGHzZ7xcazX4g/company-background_10000/0/1599692097472?e=2159024400&v=beta&t=9IV3nUNec_yHQ-CfnfqVL7EXRxWNQvaya8UviQSSaCg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.formclass{
+    
+    color: #000000;
+    background: rgba(255,255,255, 0.5);
+    margin: auto auto;
+    padding: 45px;
+    border-radius: 5%;
+}
+
+.icon{
+    min-width: 50px;
+    text-align: center;
+}
+
+.entrada{
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 15px;
+    width: 82%;
+    padding: 25px;
+    border: none;
+    outline: none;
+}
+
+.buttonform{
+    margin-top: 25px;
+    background: rgba(0,0,0, 0.5);
+	border: none;
+    width: 100%;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #ffffff;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.buttonform:hover{
+    background: #000000;
+    color: #ffffff;
+}
