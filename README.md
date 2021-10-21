@@ -59,7 +59,7 @@ El proyecto emplea un host local ya que trabaja con la base de datos PostgreSQL.
 
 ## Forma de autenticacion :mag:
 
-La autenticación se realizó gracias a la librería 'werkzeug' y sus 'import generate_password_hask' y 'check_password_hash', donde el primero genera la encriptación y el segundo comprueba si el valor cifrado coincide con el valor original.
+La autenticación se realizó gracias a la librería `werkzeug` y sus `import generate_password_hask` y `check_password_hash`, donde el primero genera la encriptación y el segundo comprueba si el valor cifrado coincide con el valor original.
 
 ## Manejo de errores 
 
