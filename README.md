@@ -1,2 +1,3 @@
 # DBP-Mixxye
-Una plataforma en la cual podras acceder mediante usuario y contraseña a variadas listas de reproducciones musicales personalizadas por ti.
+
+Una plataforma creada por alumnos de Utec en la cual mediante un usuario y contraseña podrás crear y guardar listas de musicas
