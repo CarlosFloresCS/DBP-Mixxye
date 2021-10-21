@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Mixxye</title>
+
+        <link rel="icon" href="https://codigoesports.com/wp-content/uploads/2018/01/G2-LOGO-2020-e1591144113864.png">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login_register.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='normalize.css')}}">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+    <!--separador-->
+    <body>
+        <header>
+			<div class="contenedor">
+				<h2 class="logotipo">
+                    <img class="logo" src="https://www.pngkit.com/png/full/32-325006_g2-esports-g2-esports-csgo-logo.png" alt="g2_image"> MIXXYE
+                </h2>
+				<nav>
+					<a href="/">Inicio</a>
+					<a href="https://github.com/CarlosFloresCS/DBP-Mixxye" target="_blank">Github</a>
+				</nav>
+			</div>
+		</header>
+        <main>
+            <div class="formulario">
+                <form class="formclass" action="/login" method="post">
+                    <h1>Iniciar sesión</h1>
+                    <div class="contenedorform">
+                        <div class="entrada">
+                            <i class="fas fa-envelope icon"></i><input type="text" name="email" placeholder="email">
+                        </div>
+                        <div class="entrada">
+                            <i class="fas fa-key icon"></i><input type="password" name="password" placeholder="password">
+                        </div>
+                        <input class="buttonform" type="submit" value="login">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
