@@ -7,7 +7,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import sys
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:dbp2021@localhost:5432/mixxyedb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0202@localhost:5432/mixxyedb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 database = SQLAlchemy(app)
